@@ -1,0 +1,18 @@
+sending object to consumer
+
+interface impl
+curl -H "Content-Type: application/json" localhost:8080/consumerImpl -d '{"id":1,"name":"java"}'
+curl -H "Content-Type: application/json" localhost:8080/displayBook -d '{"id":1,"name":"java"}'
+
+
+
+sending string to function
+
+curl -H "Content-Type: text/plain" localhost:8080/functionImpl -d ratna
+curl -H "Content-Type: text/plain" localhost:8080/length -d ratna
+
+calling supplier
+
+curl -H "Content-Type: application/json" localhost:8080/supplierImpl
+curl -H "Content-Type: application/json" localhost:8080/getBook
+
